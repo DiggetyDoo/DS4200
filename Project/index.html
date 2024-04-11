@@ -1,0 +1,130 @@
+ <!--Set up-->
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My test page</title>
+    <link href="styles/style.css" rel="stylesheet" >
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+  </head>
+  <body>
+    <!-- Title name part-->
+    <h1>Soccer Synergy: Maximizing Performance with Data-Driven Decisions</h1>
+
+    <!-- First interaction part. Asks for user's name in a pop-up after clicking the button-->
+    <p>Please click this button <button id="myButton">Click Here!!</button> and put your name </p>
+    
+    <h4 id="name">My name is Manoch Boonnantakul</h4>
+
+    <!-- Short bio part-->
+    <h2>Topic:</h2>
+    <p>Strategic analysis of soccer club and player performance across european top leagues</p>
+    <h2>Why it’s interesting:</h2>
+    <p>EA FC24 is the most frequently updating and accessible data platform as it is played and assessed by soccer enthusiasts all over the world. Through this data we have the opportunity to tap into  real time data and insights and capture the latest trends and development in the soccer world. 
+      Our dynamic analysis of soccer clubs and players performance can provide actionable insights that can be used by club’s management team to improve a club's overall performance through player trading and training.</p>
+
+
+    <!-- List of my interests part-->
+    <h3> Task:</h3>
+
+    <ul>
+      <li> <strong>Data abstraction (Cleaning up the data):</strong>
+        <ul>
+          <li>Removing non relevant data from the dataset.</li>
+          <li>Sort the players into different fifa versions, leagues, positions.</li>
+          <li>Further filtering the data set to our target leagues (Premier league, Bundesliga, and La Liga)</li>
+        </ul>
+      </li>
+      <li><strong>Data Analysis:</strong>
+        <ul>
+          <li>League analysis: Finding benchmark overall rating for each league to differentiate top players in each league</li>
+          <li>Club analysis: Finding each of club’s player compositions by position in terms of performance attributes to determine player trading and transfers needed.</li>
+          <li>Player search: Finding the suitable player with aligning performance and external factors for a club’s improvement needs</li>
+        </ul>
+      </li>
+      <li><strong>Data visualizations:</strong>
+        <ul>
+          <li>Generate data visualizations for each analysis to get in-depth findings.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Second interaction part. Click on image to change the image -->
+    <h2>Data source</h2>
+    <p> <strong> Click</strong> the image to gain more clues of the team.</p>
+    <img src="images/Madrid.png" alt="My test image" />
+    
+    <!--My hometowns-->
+    <h1>Lets take a look at our analysis</h1>
+    <h2>Overall League Analysis</h2>
+    
+    <!-- Third interaction part. Click on button to go to Bangkok page-->
+    <h3>Click below to see our <strong> League Analysis!!</strong></h3>
+    <button id = 'navigateButton1'> League Analysis </button>
+
+    <script>
+        const navigateButton1 = document.getElementById("navigateButton1");
+        navigateButton1.addEventListener('click', function(){
+            window.location.href = 'html/bangkok.html';
+        })
+    </script>
+
+    <h2>Club analysis</h2>
+     <!-- Fourth interaction part. Click on button to go to Phuket page-->
+    <h3>Click below to see our <strong> Club Analysis!!</strong></h3>
+    <button id = 'navigateButton2'> Club analysis </button> 
+
+    <script>
+        const navigateButton2 = document.getElementById("navigateButton2");
+        navigateButton2.addEventListener('click', function(){
+            window.location.href = 'html/chart.html';
+        })
+    </script>
+
+    <h2>Manager tools</h2>
+     <!-- Fourth interaction part. Click on button to go to Phuket page-->
+    <h3>Click below to see our <strong> Player search tools</strong></h3>
+    <button id = 'navigateButton2'> Player Search </button> 
+
+    <script>
+        const navigateButton3 = document.getElementById("navigateButton2");
+        navigateButton2.addEventListener('click', function(){
+            window.location.href = 'html/chart.html';
+        })
+    </script>
+
+     <!-- List of content I want to include in the future-->
+    <h4>Summary:</h4>
+    <ul>
+      <li> Finding:</li>
+      <ul>
+        <li>
+          From our league and club analysis, we found that there are difference in overall performance level across the leagues; however, within the leagues  disparities between the clubs are very small. This suggests that competitive balance in each league. 
+        </li>
+        <li>
+          From our club analysis and player breakdown search we can see a variety of  potential players that is capable of  enhancing a team’s performance. Leveraging our analysis can be utilize in the soccer club management and decision making.
+        </li>
+      </ul>
+      <li> Future Plans</li>
+      <ul>
+        <li>
+          Expanding the leagues we want to analyze, different geographic regions.
+        </li>
+      </ul>
+    </ul>
+
+    <h3> Find the reference papers below!</h3>
+     <!-- Add reference paper-->
+     <ul>
+      <li>
+        <a href=https://www.tandfonline.com/doi/full/10.1080/17461391.2020.1747552 > Reference Paper #1</a>
+      </li>
+      <li>
+        <a href=https://books.google.com/books?hl=en&lr=&id=_e9EAQAAQBAJ&oi=fnd&pg=PA23&dq=soccer+performance+analysis&ots=4ZSIEAk-8l&sig=Vi6sJeTIzJTohEYIf0pa6Zi02TY#v=onepage&q=soccer%20performance%20analysis&f=false> Reference Paper #2</a>
+      </li>
+    </ul>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
